@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/guidebackground"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbt_fragguide_parks"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_parklisted"
+            android:background="@drawable/selector_fraguide_bts"
+            android:gravity="center_horizontal"
+            android:text="车位列表"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbt_fragguide_person"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_personalparked"
+            android:background="@drawable/selector_fraguide_bts"
+            android:gravity="center_horizontal"
+            android:text="我的"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:id="@+id/rbt_fragguide_mesg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_messagelisted"
+            android:background="@drawable/selector_fraguide_bts"
+            android:gravity="center_horizontal"
+            android:text="消息" 
+            android:textColor="@color/white"/>
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.activity.LoadActivity" >
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ic_logo"/>
+    
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1,2"
+        android:shrinkColumns="1,2">
+        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_load_edittext"
+            android:layout_marginTop="10dp">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号:"
+                android:textSize="20sp"
+                android:textColor="#999999"/>
+        
+            <EditText 
+                android:id="@+id/et_loadactivity_account"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="请输入账号"
+                android:background="@null"/>
+            
+        </TableRow>
+        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_load_edittext"
+            android:layout_marginTop="10dp">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:textSize="20sp"
+                android:textColor="#999999"/>
+        
+            <EditText 
+                android:id="@+id/et_loadactivity_password"
+                android:inputType="textPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:hint="请输入密码"
+                android:background="@null"/>
+            
+        </TableRow>
+    </TableLayout>
+        
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1,2"
+        android:shrinkColumns="1,2">
+        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            
+            <Button 
+                android:id="@+id/bt_loadactivity_load"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_load_load"
+                android:text="登陆"
+                android:textColor="@color/ivory"/>
+            
+            <Button 
+                android:id="@+id/bt_loadactivity_forgetpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="end"
+                android:text="忘记密码"
+                android:textColor="@color/ivory"/>
+            
+        </TableRow>
+        
+        <TableRow 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            
+            <Button 
+                android:id="@+id/bt_loadactivity_registe"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                 android:background="@drawable/selector_load_registe"
+                android:text="注册"/>
+            
+            <Button 
+                android:id="@+id/bt_loadactivity_steppass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="end"
+                android:text="跳过此步直接使用"
+                android:textColor="@color/ivory"/>
+            
+        </TableRow>
+    </TableLayout>
+ 
+    
+
+</LinearLayout>
